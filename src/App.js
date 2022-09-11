@@ -4,6 +4,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import User from "./pages/User";
+import Coin from "./pages/Coin";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="user" element={<User />} />
+        <Route path="coin" element={<Coin />} />
+        <Route path="dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

@@ -22,6 +22,9 @@ function App() {
           <li>
             <Link to="/user">User</Link>
           </li>{" "}
+          <li>
+            <Link to="/coin">Coin</Link>
+          </li>{" "}
         </ul>
       </nav>
 

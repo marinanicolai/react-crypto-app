@@ -1,11 +1,10 @@
 import logo from "./logo.svg";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Redirect } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import User from "./pages/User";
+import Favorite from "./pages/Favorite";
 import Coin from "./pages/Coin";
-import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -17,23 +16,18 @@ function App() {
             <Link to="/">Home</Link>
           </li>{" "}
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/explore">Explore</Link>
           </li>{" "}
           <li>
-            <Link to="/user">User</Link>
-          </li>{" "}
-          <li>
-            <Link to="/coin">Coin</Link>
+            <Link to="/favorite">Favorite</Link>
           </li>{" "}
         </ul>
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="user" element={<User />} />
-        <Route path="coin" element={<Coin />} />
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Coin />} />
+        <Route path="explore" element={<About />} />
+        <Route path="favorite" element={<Favorite />} />
       </Routes>
     </div>
   );

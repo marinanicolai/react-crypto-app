@@ -5,10 +5,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Favorite from "./pages/Favorite";
 import Coin from "./pages/Coin";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <header className="App-header">Crypto app</header>
       <nav>
         <ul>
@@ -29,6 +32,7 @@ function App() {
         <Route path="explore" element={<About />} />
         <Route path="favorite" element={<Favorite />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

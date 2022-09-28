@@ -1,5 +1,16 @@
-import React from "react";
+import React, {
+  useState,
+  useEffect,
+  useReducer,
+  useRef,
+  useLayoutEffect,
+  useContext,
+  useImperativeHandle,
+  useMemo,
+  useCallback,
+} from "react";
 import { Link } from "react-router-dom";
+import { data } from "../../data";
 
 const About = () => {
   return (
@@ -7,9 +18,6 @@ const About = () => {
       <main>
         <h2>About page</h2>
       </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
     </>
   );
 };

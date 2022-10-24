@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CurrencySelect from "../CurrencySelect";
 
 const Header = () => {
   return (
     <>
       <main>
-        <h1>Header component</h1>
+        <CurrencySelect />
       </main>
     </>
   );

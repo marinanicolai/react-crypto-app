@@ -7,7 +7,7 @@ import Favorite from "./pages/Favorite";
 import Coin from "./pages/Coin";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 
 function App() {
   return (

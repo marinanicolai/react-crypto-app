@@ -1,6 +1,8 @@
 # Helpers to build the application
-Antd - library that contains a set of high quality components and demos for building rich, interactive user interfaces.
-React Select - A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
+### `Antd`
+        library that contains a set of high quality components and demos for building rich, interactive user interfaces.
+### `React Select` 
+       a flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
 
 # Getting Started with Create React App
 

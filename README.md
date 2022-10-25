@@ -1,7 +1,7 @@
 # Helpers to build the application
-### `Antd`  [https://ant.design/docs/react/introduce]
+### `Antd` 
         library that contains a set of high quality components and demos for building rich, interactive user interfaces.
-### `React Select` [https://react-select.com/home]
+### `React Select`
        a flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
 
 # Getting Started with Create React App

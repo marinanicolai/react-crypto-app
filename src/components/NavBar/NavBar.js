@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CurrencySelect from "../CurrencySelect/CurrencySelect";
+import CurrencySelect from "../CurrencySelect/index";
+import Search from "../Search/index";
 import { Nav, Container } from "./NavBar.styles";
 import { Col } from "antd";
 
@@ -17,6 +18,9 @@ const NavBar = () => {
             xl={{ span: 9 }}
           >
             <CurrencySelect />
+          </Col>
+          <Col>
+            <Search />
           </Col>
         </Container>
       </Nav>

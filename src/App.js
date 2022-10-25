@@ -6,13 +6,13 @@ import About from "./pages/About";
 import Favorite from "./pages/Favorite";
 import Coin from "./pages/Coin";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import "antd/dist/antd.css";
+import NavBar from "./components/NavBar";
+import "antd/dist/antd.min.css";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <NavBar />
       <header className="App-header">Crypto app</header>
       <nav>
         <ul>

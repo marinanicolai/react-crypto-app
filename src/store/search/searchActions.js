@@ -6,7 +6,7 @@ import {
 } from "./searchReducer";
 
 export const getAllCoins = (inputValue) => async (dispatch) => {
-  const base = "https://api.blockchain.com/v3/exchange";
+  const base = "https://crypto-app-server.herokuapp.com/coins";
 
   if (!inputValue) return;
   try {

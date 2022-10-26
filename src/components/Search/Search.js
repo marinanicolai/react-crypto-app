@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { StyledAsyncSelect } from "./Search.styles";
+import { getAllCoins } from "../../store/search/searchActions";
 
-const Search = () => {
+const Search = ({ allCoins, isLoading }) => {
+  const [value, setValue] = useState("");
+
+  useEffect(() => {
+    getAllCoins(value);
+  }, [getAllCoins, value]);
+
   return (
     <>
-      <p>this is a Search component</p>
+      <StyledAsyncSelect placeholder="Search" isLoading={isLoading} />
     </>
   );
 };

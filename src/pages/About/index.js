@@ -1,14 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  useReducer,
-  useRef,
-  useLayoutEffect,
-  useContext,
-  useImperativeHandle,
-  useMemo,
-  useCallback,
-} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { data } from "../../data";
 

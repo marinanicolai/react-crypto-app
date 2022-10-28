@@ -16,8 +16,10 @@ const Search = ({ allCoins, isLoading }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await axios(`${base}/${value}`);
-      setSearchResult(data.data);
+      if (!value) {
+        const data = await axios(`${base}/${value}`);
+        setSearchResult(data.data);
+      }
     };
     fetchData()
       // make sure to catch any error

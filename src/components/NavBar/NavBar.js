@@ -22,6 +22,16 @@ const NavBar = () => {
           <Col>
             <Search />
           </Col>
+          <Col>
+            <ul>
+              <li>
+                <Link to="/">Explore</Link>
+              </li>{" "}
+              <li>
+                <Link to="/favorite">Favorite</Link>
+              </li>{" "}
+            </ul>
+          </Col>
         </Container>
       </Nav>
     </>

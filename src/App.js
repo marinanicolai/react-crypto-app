@@ -1,10 +1,7 @@
-import logo from "./logo.svg";
 import { Routes, Route, Link, Redirect } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
 import Favorite from "./pages/Favorite";
-import Coin from "./pages/Coin";
+import CoinList from "./pages/CoinList";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import "antd/dist/antd.min.css";
@@ -16,21 +13,18 @@ function App() {
       <header className="App-header">Crypto app</header>
       <nav>
         <ul>
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
-          </li>{" "}
-          <li>
-            <Link to="/explore">Explore</Link>
-          </li>{" "}
-          <li>
+          </li>{" "} */}
+          {/* <li>
             <Link to="/favorite">Favorite</Link>
-          </li>{" "}
+          </li>{" "} */}
         </ul>
       </nav>
 
       <Routes>
-        <Route path="/" element={<Coin />} />
-        <Route path="explore" element={<About />} />
+        <Route path="/" element={<CoinList />} />
+
         <Route path="favorite" element={<Favorite />} />
       </Routes>
       <Footer />

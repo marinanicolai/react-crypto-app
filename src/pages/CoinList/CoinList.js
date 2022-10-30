@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Img } from "./Coin.styles";
+import { Img } from "./CoinList.styles";
 
 export default function App() {
   const [coinState, setCoinState] = useState([]);
